@@ -238,7 +238,7 @@ stats_view = StatsAPI.as_view('stats_api')
 
 # add Rules for API Endpoints
 diary_blueprint.add_url_rule(
-    '/api/diaries',
+    '/api/diary',
     view_func=diaries_view,
     methods=['GET']
 )
@@ -248,7 +248,7 @@ diary_blueprint.add_url_rule(
     methods=['GET']
 )
 diary_blueprint.add_url_rule(
-    '/api/diary/create',
+    '/api/diary',
     view_func=diary_create_view,
     methods=['POST']
 )
